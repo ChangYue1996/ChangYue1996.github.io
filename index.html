@@ -64,6 +64,51 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-JS-notes-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/28/JS-notes-1/" class="article-date">
+  <time datetime="2020-04-28T04:25:27.000Z" itemprop="datePublished">2020-04-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/28/JS-notes-1/">JS notes 1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="forEach-break-out-of-loop"><a href="#forEach-break-out-of-loop" class="headerlink" title="forEach() break out of loop"></a>forEach() break out of loop</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">array &#x3D; [1, 2, 3, 4];</span><br><span class="line">array.forEach(function (element) &#123;</span><br><span class="line">  console.log(element);</span><br><span class="line">  </span><br><span class="line">  if (element &#x3D;&#x3D;&#x3D; 2) </span><br><span class="line">    return;</span><br><span class="line">  </span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; Output: 1 2 3 4</span><br></pre></td></tr></table></figure>
+
+<p>What happens?</p>
+<p>From the official MDN docs:<br>There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.</p>
+<p>Explanation:<br>forEach will execute the callback function to each iterable, it doesn’t care you exit once or not.<br>The same thing happens to <em>“continue”</em> and <em>“break”</em>, they do not work as well.</p>
+<p>Solution:<br>Just use normal loop:<br>for (let i = …; i &lt; … ; i++){</p>
+<p>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/28/JS-notes-1/" data-id="ck9jf9gnh000070r91zzvcq6q" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/" rel="tag">JS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-How-Javascript-Works-Asynchronous-JS" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/16/How-Javascript-Works-Asynchronous-JS/" class="article-date">
@@ -131,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/16/How-Javascript-Works-Asynchronous-JS/" data-id="ck9jezkgr0002kkr95e3kd9sx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/16/How-Javascript-Works-Asynchronous-JS/" data-id="ck9jf3fg30002nkr94mqph9t4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Asychronous/" rel="tag">Asychronous</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
@@ -169,7 +214,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/16/Javascript-module-management/" data-id="ck9jezkgs0003kkr9ek1tfcv8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/16/Javascript-module-management/" data-id="ck9jf3fg20001nkr9c5s9brxr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
@@ -194,7 +239,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Asychronous/" rel="tag">Asychronous</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Asychronous/" rel="tag">Asychronous</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
     </div>
   </div>
 
@@ -204,7 +249,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Asychronous/" style="font-size: 10px;">Asychronous</a> <a href="/tags/Javascript/" style="font-size: 20px;">Javascript</a>
+      <a href="/tags/Asychronous/" style="font-size: 10px;">Asychronous</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Javascript/" style="font-size: 20px;">Javascript</a>
     </div>
   </div>
 
@@ -224,6 +269,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/04/28/JS-notes-1/">JS notes 1</a>
+          </li>
         
           <li>
             <a href="/2020/04/16/How-Javascript-Works-Asynchronous-JS/">How Javascript Works: Asynchronous JS</a>
